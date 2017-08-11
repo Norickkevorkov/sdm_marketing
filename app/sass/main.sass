@@ -46,9 +46,349 @@ body
 	overflow-x: hidden
 	opacity: 1
 
-.img-responsive
+
+.firstscreen
 	display: block
 	max-width: 100%
-	height: auto
-
+	background: url("../img/header_bg_img.png") 50% 0 no-repeat
+	position: relative
+	z-index: 10
+	&:after
+		display: block
+		content: ''
+		position: absolute
+		background: url("../img/header_bg_img_after.png") 50% 0 no-repeat
+		width: 100%
+		height: 377px
+		z-index: -1
+		bottom: -324px
+header
+	margin-top: 10px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.logo
+		display: flex
+		align-items: center
+	span.descriptor
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		line-height: 1.5
+		font-size: 20px
+		max-width: 295px
+		display: inline-block
+		vertical-align: middle
+		margin-left: 20px
+	.phone_block
+		float: right
+		.tel_number
+			font-size: 30px
+			color: #ffffff
+			display: block
+			&:hover
+				text-decoration: none
+				border-bottom: none
+			svg
+				position: relative
+				bottom: 6px
+				right: 5px
+		.calls_request
+			font-family: "Milio", sans-serif
+			font-style: italic
+			float: right
+			font-size: 24px
+			color: #ffffff
+			border-bottom: 4px dotted #fff
+			&:hover
+				text-decoration: none
+				border-bottom: 4px solid transparent
+section.offer
+	margin-top: 90px
+	max-width: 800px
+	color: #ffffff
+	position: relative
+	.first
+		font-size: 48px
+		font-family: "Milio", sans-serif
+		font-style: italic
+		&:after
+			content: ''
+			display: inline-block
+			width: 110px
+			vertical-align: middle
+			margin-left: 15px
+			height: 3px
+			background-color: $red
+	.second
+		margin-top: 0
+		margin-bottom: 0
+		font-size: 72px
+		font-weight: bold
+		line-height: 1.3
+		text-transform: uppercase
+		.third
+			color: $red
+	.fourth
+		font-size: 48px
+		font-family: "Milio", sans-serif
+		font-style: italic
+		max-width: 500px
+		line-height: 1.2
+		margin-top: 0
+	.fifth
+		position: absolute
+		top: 180px
+		right: 85px
+		margin: 0
+		line-height: 1.3
+		padding: 10px 15px
+		font-weight: bold
+		font-size: 200px
+		color: $red
+		border: 20px solid rgba(255,255,255,0.2)
+		.sixth
+			font-weight: normal
+			font-size: 48px
+			font-family: "Milio", sans-serif
+			font-style: italic
+			color: #ffffff
+			position: absolute
+			display: block
+			top: 135px
+			right: -100px
+		.seventh
+			font-size: 100px
+			position: absolute
+			top: 85px
+			right: 95px
+	.header_button
+		width: 300px
+		height: 75px
+		display: block
+		background-color: $red
+		color: #ffffff
+		padding: 25px
+		position: relative
+		text-transform: uppercase
+		text-align: center
+		border-radius: 2px
+		&:after
+			content: ''
+			width: 30px
+			height: 21px
+			background: url("../img/header_arrow.png") no-repeat
+			display: block
+			position: absolute
+			right: -20px
+			top: 28px
+section.add_offer
+	position: relative
+	.inner
+		background: url('../img/paint.png') no-repeat
+		height: 400px
+		width: 354px
+		position: absolute
+		bottom: 10px
+		right: 0
+		svg
+			position: relative
+			top: 150px
+			left: 0
+		p
+			font-weight: bold
+			font-size: 30px
+			color: #ffffff
+			text-transform: uppercase
+			position: relative
+			line-height: 1.3
+			top: 70px
+			left: 45px
+.secondscreen
+	background: url('../img/secondscreen_bg.png') 50% 0 no-repeat
+	position: relative
+	z-index: 9
+	&:after
+		position: absolute
+		content: ''
+		display: block
+		height: 253px
+		width: 100%
+		background: url("../img/secondscreen_bg_after.png") 50% 0 no-repeat
+		bottom: -250px
+		z-index: 0
+	.video_content
+		margin-top: 330px
+		width: 100%
+		height: 525px
+		background-color: #000
+		position: relative
+		box-shadow: 0 10px 60px rgba(42,42,42,.8)
+		button.play
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			margin: auto
+			display: block
+			width: 67px
+			height: 78px
+			background: url("../img/play_button.png") no-repeat
+			border: none
+			&:hover
+				background: url("../img/play_hovered.png") no-repeat
+	.list
+		position: relative
+		border: 20px solid rgba(42,42,42,.3)
+		margin-top: 215px
+		min-height: 350px
+		img
+			position: absolute
+			top: -140px
+			left: -175px
+			z-index: 1
+		ul
+			li
+				list-style-image: url('../img/list-style_header.png')
+				padding: 15px 0
+				position: relative
+				right: 20px
+.thirdscreen
+	background: url('../img/thirdscreen_bg.jpg') no-repeat
+	min-height: 2000px
+	width: 100%
+	padding: 225px 0 0
+	position: relative
+	z-index: 8
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		background: url("../img/thirdscreen_bg_after.png") 50% 0 no-repeat
+		height: 210px
+		width: 100%
+		bottom: -184px
+	.header
+		color: #ffffff
+		p
+			font-size: 36px
+			font-family: "Milio", sans-serif
+			font-style: italic
+			margin: 0
+			&:after
+				content: ''
+				display: inline-block
+				width: 110px
+				vertical-align: middle
+				margin-left: 15px
+				height: 3px
+				background-color: #ff4142
+		h2
+			font-size: 48px
+			margin: 0
+			font-weight: bold
+			text-transform: uppercase
+	p
+		color: #ffffff
+	.icon_block
+		text-align: center
+		min-height: 600px
+		margin-top: 30px
+		h3
+			color: #ffffff
+			font-size: 30px
+			font-family: "Milio", sans-serif
+			text-align: center
+			position: relative
+			&:after
+				content: ''
+				display: block
+				position: absolute
+				width: 60px
+				height: 3px
+				background-color: $red
+				bottom: -10px
+				left: 45%
+		p
+			margin-bottom: 0
+		span
+			font-size: 30px
+			font-family: "Milio", sans-serif
+			font-weight: bold
+			display: block
+			color: #ffffff
+		a
+			width: 355px
+			display: block
+			padding: 15px
+			color: #ffffff
+			font-weight: bold
+			font-size: 20px
+			background-color: $red
+			margin: 5px auto
+.fourthscreen
+	background: url('../img/fourthscreen_bg.jpg') 50% 0 no-repeat
+	min-height: 1400px
+	z-index: 7
+	position: relative
+	padding: 215px 0 0
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		background: url("../img/fourthscreen_bg_after.png") 50% 0 no-repeat
+		height: 180px
+		width: 100%
+		bottom: -170px
+	.header
+		color: #1f1f2a
+		p
+			font-size: 36px
+			font-family: "Milio", sans-serif
+			font-style: italic
+			margin-bottom: 0
+			&:after
+				content: ''
+				display: inline-block
+				width: 110px
+				vertical-align: middle
+				margin-left: 15px
+				height: 3px
+				background-color: #ff4142
+		h2
+			font-size: 48px
+			margin: 0
+			text-transform: uppercase
+	p
+		color: #1f1f2a
+		width: 100%
+		max-width: 680px
+		font-size: 24px
+	.portfolio
+		margin-top: 25px
+		.case
+			padding: 20px 0
+			img
+				box-shadow: 0 12px 23px rgba(42,42,42,.3)
+.fifthscreen
+	background: url('../img/fifthscreen_bg.jpg') 50% 0 no-repeat
+	min-height: 900px
+	position: relative
+	padding: 200px 0 0
+	h2
+		color: #ffffff
+		font-family: $default-font
+		font-weight: bold
+		font-size: 48px
+		&:after
+			content: ''
+			display: block
+			width: 45px
+			height: 3px
+			background-color: $red
+	p
+		max-width: 500px
+		width: 100%
+		color: #ffffff
 @import "media" // Всегда в конце
