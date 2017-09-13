@@ -6,6 +6,7 @@ var gulp           = require('gulp'),
 		uglify         = require('gulp-uglify'),
 		cleanCSS       = require('gulp-clean-css'),
 		rename         = require('gulp-rename'),
+    	connect 	   = require('gulp-connect-php'),
 		del            = require('del'),
 		imagemin       = require('gulp-imagemin'),
 		cache          = require('gulp-cache'),
@@ -28,10 +29,16 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/revealator-master/fm.revealator.jquery.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.js',
+		'app/libs/inputmask/dist/inputmask/inputmask.js',
+		'app/libs/inputmask/dist/inputmask/inputmask.extensions.js',
+		'app/libs/inputmask/dist/inputmask/inputmask.numeric.extensions.js',
+		'app/libs/inputmask/dist/inputmask/jquery.inputmask.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
-	// .pipe(uglify()) // Минимизировать весь js (на выбор)
+	.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));
 });
