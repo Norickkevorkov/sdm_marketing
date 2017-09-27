@@ -35,6 +35,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/inputmask/dist/inputmask/inputmask.extensions.js',
 		'app/libs/inputmask/dist/inputmask/inputmask.numeric.extensions.js',
 		'app/libs/inputmask/dist/inputmask/jquery.inputmask.js',
+		'app/libs/slick-carousel/slick/slick.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

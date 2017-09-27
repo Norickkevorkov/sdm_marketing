@@ -2,30 +2,449 @@
 
 /*==========  Desktop First  ==========*/
 
+/* Giant Devices, Wide Screens */
+@media only screen and (max-width : 1320px)
+	section.offer
+		margin-top: 100px
+		.first
+			font-size: 36px
+		.second
+			font-size: 52px
+			line-height: 1.3
+		.fifth
+			top: 123px
+			right: 125px
+			line-height: 1.3
+	section.add_offer
+		.inner
+			bottom: -240px
+			right: -70px
+			background-size: 70%
+			background-position: 20% 30%
+			p
+				font-size: 24px
+	.secondscreen
+		.list
+			ul
+				padding-left: 0
+				li
+					padding: 10px 0
+	.thirdscreen
+		.icon_block
+			h3
+				font-size: 24px
+			p
+				font-size: 15px
+	.fourthscreen
+		.portfolio
+			.case
+				max-width: 310px
+				height: 310px
+				img.case_img
+					width: 310px
+				.desc
+					max-width: 310px
+					height: 310px
+					.border
+						max-width: 290px
+						height: 300px
+						a
+							font-size: 16px
+							margin-top: -15px
+							display: block
+						.count
+							font-size: 14px
+							span
+								font-size: 18px
+						.img_container img
+							margin-bottom: 0
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
+	.fourthscreen
+		.portfolio
+			.case
+				max-width: 260px
+				height: 260px
+				img.case_img
+					width: 260px
+				.desc
+					max-width: 260px
+					height: 260px
+					.border
+						max-width: 240px
+						height: 250px
+						a
+							font-size: 16px
+							margin-top: -15px
+							display: block
+						.count
+							font-size: 14px
+							span
+								font-size: 18px
+						.img_container img
+							margin-bottom: 0
+	.sixthscreen
+		background: url(../img/sixthscreen_bg.jpg) 63% 0 no-repeat
+		&:after
+			background: url(../img/sixthscreen_bg_after.png) 63% 0 no-repeat
+		.person
+			p.desc
+				font-size: 17px
+			a
+				padding: 13px
+	.seventhscreen
+		min-height: 685px
+		form.form2
+			input
+				width: 290px
+				margin-right: 20px
+			button[name=submit]
+				width: 290px
+	.eighthscreen
+		.about_item.second
+			p
+				width: 570px
+		.about_item.first
+			img
+				left: 660px
+	.ninthscreen
+		background: url(../img/ninthscreen_bg.jpg) 0 0 no-repeat
+		&:after
+			background: url(../img/ninthscreen_bg_after.png) 0 0 no-repeat
+		.revolver
+			display: none
+		.cycle
+			display: none
+		.tab_container
+			.tab
+				.desc
+					.img_container
+						right: 0
+						left: 0
+						margin: 0 auto
+					p
+						right: 0
+						left: 0
+						margin: 0 auto
+	.tenthscreen
+		.header
+			h2
+				line-height: 1.3
+		p
+			margin-top: 0
+		form.form3
+			input
+				width: 240px
+				font-size: 18px
+				margin-right: 10px
+			button[type=submit]
+				width: 240px
+				font-size: 18px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-
+	.secondscreen
+		.list
+			ul
+				li
+					font-size: 14px
+					right: -20px
+	.thirdscreen
+		background: url(../img/thirdscreen_bg.jpg)0 100% no-repeat
+		min-height: 1250px
+		.icon_block
+			min-height: 553px
+			img
+				max-height: 150px
+				margin: 0 auto
+			h3
+				font-size: 22px
+			p
+				font-size: 14px
+	.fourthscreen
+		.header
+			p
+				margin-top: 0
+		.portfolio
+			.case
+				position: relative
+				max-width: 320px
+				height: 320px
+				margin: 0 auto
+				img.case_img
+					width: 320px
+				.desc
+					max-width: 320px
+					height: 320px
+					display: block !important
+					.border
+						max-width: 300px
+						height: 290px
+						a
+							font-size: 16px
+							margin-top: -15px
+							display: block
+						.count
+							font-size: 14px
+							span
+								font-size: 18px
+						.img_container img
+							margin-bottom: 0
+	.fifthscreen
+		form
+			img
+				right: -450px
+	.sixthscreen
+		background: url(../img/sixthscreen_bg.jpg) 63% 86% no-repeat
+		min-height: 2290px
+		.advantages
+			.advantage
+				h3
+					font-size: 18px
+					top: 40px
+				p.desc
+					font-size: 14px
+					top: 35px
+		.person
+			img
+				max-width: 170px
+				max-height: 170px
+			p.desc
+				font-size: 14px
+				margin: 10px auto
+				max-width: 350px
+				min-height: 170px
+			a
+				font-size: 14px
+				margin: 10px auto
+				max-width: 350px
+	.seventhscreen
+		form.form2
+			margin-top: 0
+			height: 240px
+	.eighthscreen
+		.about_item.second
+			p
+				font-size: 14px
+				max-width: 355px
+				line-height: 1.4
+		.about_item.first
+			p
+				font-size: 14px
+				max-width: 355px
+				line-height: 1.4
+			img
+				left: 400px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.firstscreen
+		background: url(../img/header_bg_img.jpg) 63% 0 no-repeat
+		min-height: 738px
+		&:after
+			background: url(../img/header_bg_img_after.png) 63% 0 no-repeat
 
+		header
+			flex-direction: column
+			.logo
+				flex-direction: column
+				svg
+					display: block
+				span.descriptor
+					display: block
+					margin: 30px auto 0
+					text-align: center
+			.phone_block
+				display: block
+				float: none
+				width: 100%
+				.tel_number
+					text-align: center
+				.calls_request
+					display: none
+		.offer
+			margin-top: 15px
+			.first
+				font-size: 22px
+			.second
+				font-size: 26px
+				line-height: 1.5
+			.fourth
+				font-size: 24px
+			.fifth
+				font-size: 115px
+				right: 215px
+				.seventh
+					top: 20px
+					right: 75px
+				.sixth
+					font-size: 24px
+					top: 65px
+					right: -50px
+			.eighth
+				display: none
+			.header_button
+				bottom: -240px
+		section.add_offer
+			.inner
+				bottom: -315px
+				right: -135px
+				background-size: 40%
+				p
+					font-size: 18px
+	.secondscreen
+		background: url(../img/secondscreen_bg.jpg) 50% 100% no-repeat
+		.list
+			border: none
+			ul
+				padding-left: 100px
+				margin: 0
+			img
+				left: -410px
+	.thirdscreen
+		background: url(../img/thirdscreen_bg.jpg)0 100% no-repeat
+		min-height: 1430px
+		&:after
+			background: url(../img/thirdscreen_bg_after.png) 50% 100% no-repeat
+			height: 90px
+			bottom: -90px
+	.fourthscreen
+		padding-top: 115px
+		background: url(../img/fourthscreen_bg.jpg) 50% 14% no-repeat
+		min-height: 800px
+		&:after
+			background: url(../img/fourthscreen_bg_after.png) 50% 50% no-repeat
+			height: 90px
+			bottom: -75px
+		.header
+			h2
+				line-height: 1.2
+		p
+			font-size: 18px
+	.fifthscreen
+		padding-top: 120px
+		background: url(../img/fifthscreen_bg.jpg) 50% 96% no-repeat
+		min-height: 870px
+		h2
+			line-height: 1.2
+		img
+			display: none
+		form
+			label
+				font-size: 18px
+			input,button[type=submit]
+				height: 65px
+				width: 100%
+				max-width: 320px
+				font-size: 18px
+	.sixthscreen
+		min-height: 1785px
+		background: url(../img/sixthscreen_bg.jpg) 63% 94% no-repeat
+		.header
+			h2
+				line-height: 1.3
+		.advantages
+			margin-top: 130px
+			top: -160px
+			.advantage
+				img
+					position: relative
+					top: 0
+		.header2 h2
+			padding-top: 45px
+			font-size: 36px
+		.person
+			p.desc
+				font-size: 18px
+				min-height: 300px
+	.seventhscreen
+		min-height: 735px
+		padding: 130px 0 0
+		p
+			font-size: 18px
+		.header
+			h2
+				font-size: 30px
+			p
+				font-size: 20px
+		form.form2
+			input
+				font-size: 18px
+			button[name=submit]
+				font-size: 18px
+	.eighthscreen,.ninthscreen,.tenthscreen
+		display: none
+	footer.footer
+		min-height: 344px
+		padding: 85px 0 0
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
-
+	.firstscreen
+		.offer
+			.fifth
+				white-space: nowrap
+				right: 85px
+				.sixth
+					top: 65px
+					right: -50px
+			.header_button
+				width: 315px
+				z-index: 5
+	.thirdscreen
+		min-height: 1380px
+		&:after
+			background: url(../img/thirdscreen_bg_after.png) 50% 100% no-repeat
+			height: 110px
+			bottom: -106px
+		.icon_block
+			min-height: 567px
+		.header
+			p
+				font-size: 22px
+			h2
+				font-size: 36px
+	.fourthscreen
+		padding-top: 130px
+		background: url(../img/fourthscreen_bg.jpg) 50% 33% no-repeat
+		min-height: 790px
+		&:after
+			background: url(../img/fourthscreen_bg_after.png) 50% 50% no-repeat
+			height: 80px
+			bottom: -80px
+		.header
+			h2
+				font-size: 36px
+	.fifthscreen
+		background: url(../img/fifthscreen_bg.jpg) 50% 93% no-repeat
+		min-height: 900px
+		padding-top: 140px
+		h2
+			font-size: 36px
+	.sixthscreen
+		min-height: 1905px
+		.header
+			h2
+				font-size: 36px
+		.person
+			a
+				padding: 25px
+	.seventhscreen
+		min-height: 770px
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
+@media only screen and (max-width : 365px)
 	/**/
-
+	.firstscreen
+		.offer
+			.fifth
+				top: 170px
+				right: 65px
+	.sixthscreen
+		min-height: 2000px
 
 /*==========  Mobile First  ==========*/
 
