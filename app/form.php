@@ -4,6 +4,9 @@ $formName = 'сдм-маркетинг.рф';
 $name = $_POST['name'];
 $tel = $_POST['phone'];
 $email = htmlspecialchars(trim($_POST['email']), ENT_QUOTES);
+$site_address = $_POST['site'];
+$clients_count = $_POST['clients_count'];
+$business = $_POST['business'];
 function validatePhone($phoneNo){
 //    return preg_match('/\(?\d{3}\)?[-\s.]?\d{3}
 //        [-\s.]\d{4}/x', $phoneNo);

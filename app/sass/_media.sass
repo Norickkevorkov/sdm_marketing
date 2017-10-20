@@ -3,6 +3,15 @@
 /*==========  Desktop First  ==========*/
 
 /* Giant Devices, Wide Screens */
+@media only screen and (max-width : 1420px)
+	.ninthscreen
+
+		&:after
+			background: url(../img/ninthscreen_bg_after.png) 72% 0 no-repeat
+		.revolver
+			right: -360px
+		figure.cycle
+			right: 60px
 @media only screen and (max-width : 1320px)
 	section.offer
 		margin-top: 100px
@@ -23,6 +32,9 @@
 			background-position: 20% 30%
 			p
 				font-size: 24px
+				top: 40px
+			svg
+				top: 170px
 	.secondscreen
 		.list
 			ul
@@ -37,6 +49,9 @@
 				font-size: 15px
 	.fourthscreen
 		.portfolio
+			.slick-slider
+				.slick-arrow
+					bottom: -20px
 			.case
 				max-width: 310px
 				height: 310px
@@ -62,7 +77,13 @@
 @media only screen and (max-width : 1200px)
 	/**/
 	.fourthscreen
+		min-height: 850px
+		&:after
+		background: url(../img/fourthscreen_bg.jpg) 50% 9% no-repeat
 		.portfolio
+			.slick-slider
+				.slick-arrow
+					bottom: 20px
 			.case
 				max-width: 260px
 				height: 260px
@@ -145,12 +166,28 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	.firstscreen
+		.offer.lp
+			.fifth
+				font-size: 90px
+				top: 234px
+				right: inherit
+				.sixth
+					top: 53px
 	.secondscreen
+		.video_content
+			height: 430px
+		iframe.video
+			height: 430px
 		.list
 			ul
 				li
 					font-size: 14px
 					right: -20px
+	.thirdscreen.lp
+		min-height: 1250px
+		&:after
+			bottom: -90px
 	.thirdscreen
 		background: url(../img/thirdscreen_bg.jpg)0 100% no-repeat
 		min-height: 1250px
@@ -163,11 +200,15 @@
 				font-size: 22px
 			p
 				font-size: 14px
+
 	.fourthscreen
 		.header
 			p
 				margin-top: 0
 		.portfolio
+			.slick-slider
+				.slick-arrow
+					bottom: -15px
 			.case
 				position: relative
 				max-width: 320px
@@ -246,7 +287,6 @@
 		min-height: 738px
 		&:after
 			background: url(../img/header_bg_img_after.png) 63% 0 no-repeat
-
 		header
 			flex-direction: column
 			.logo
@@ -265,6 +305,17 @@
 					text-align: center
 				.calls_request
 					display: none
+		.offer.lp
+			.fifth
+				font-size: 65px
+				right: inherit
+				top: 150px
+				.sixth
+					top: 50px
+					right: inherit
+					left: 240px
+			.header_button
+				top: 245px
 		.offer
 			margin-top: 15px
 			.first
@@ -282,8 +333,8 @@
 					right: 75px
 				.sixth
 					font-size: 24px
-					top: 65px
-					right: -50px
+					top: 100px
+					right: -54px
 			.eighth
 				display: none
 			.header_button
@@ -295,8 +346,14 @@
 				background-size: 40%
 				p
 					font-size: 18px
+
+
 	.secondscreen
 		background: url(../img/secondscreen_bg.jpg) 50% 100% no-repeat
+		.video_content
+			height: 430px
+		iframe.video
+			height: 430px
 		.list
 			border: none
 			ul
@@ -314,7 +371,7 @@
 	.fourthscreen
 		padding-top: 115px
 		background: url(../img/fourthscreen_bg.jpg) 50% 14% no-repeat
-		min-height: 800px
+		min-height: 885px
 		&:after
 			background: url(../img/fourthscreen_bg_after.png) 50% 50% no-repeat
 			height: 90px
@@ -393,8 +450,17 @@
 					top: 65px
 					right: -50px
 			.header_button
-				width: 315px
+				width: 100vw
+				position: relative
+				left: -15px
 				z-index: 5
+				&:after
+					display: none
+	.secondscreen
+		.video_content
+			display: none
+		iframe.video
+			display: none
 	.thirdscreen
 		min-height: 1380px
 		&:after
@@ -408,10 +474,12 @@
 				font-size: 22px
 			h2
 				font-size: 36px
+	.thirdscreen.lp
+		
 	.fourthscreen
 		padding-top: 130px
 		background: url(../img/fourthscreen_bg.jpg) 50% 33% no-repeat
-		min-height: 790px
+		min-height: 845px
 		&:after
 			background: url(../img/fourthscreen_bg_after.png) 50% 50% no-repeat
 			height: 80px
@@ -433,18 +501,126 @@
 		.person
 			a
 				padding: 25px
+				max-width: 100vw
+				width: 100vw
+				position: relative
+				left: -15px
 	.seventhscreen
 		min-height: 770px
+	footer.footer
+		background: none #22202b
+		text-align: center
+		.phone_block
+			float: none
+			text-align: center
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 365px)
 	/**/
 	.firstscreen
+		header
+			.logo
+				svg
+					width: 105px
+					image
+						width: 105px
+						height: 108px
+				span.descriptor
+					margin-top: 0
+					font-size: 15px
 		.offer
 			.fifth
 				top: 170px
-				right: 65px
+				right: 90px
+	.thirdscreen
+		min-height: 1300px
+		.header
+			h2
+				font-size: 24px
+	.thirdscreen.lp:after
+		bottom: -80px
+	.fourthscreen
+		min-height: 790px
+		.header
+			p
+				font-size: 22px
+			h2
+				font-size: 24px
+	.fifthscreen
+		min-height: 835px
+		.container
+			padding-left: 0
+			padding-right: 0
+
+		h2
+			font-size: 24px
+			padding-left: 15px
+			padding-right: 15px
+		p
+			padding-left: 15px
+			padding-right: 15px
+		form
+			label
+				padding-left: 15px
+				padding-right: 15px
+			input
+				max-width: 100%
+			button[type=submit]
+				max-width: 100%
+				&:after
+					display: none
+			.checkbox_container
+				padding-left: 15px
+				padding-right: 15px
+				a
+					font-size: 14px
 	.sixthscreen
-		min-height: 2000px
+		min-height: 1567px
+		.header
+			h2
+				font-size: 24px
+			p
+				font-size: 22px
+		.header2
+			h2
+				font-size: 24px
+			p
+				font-size: 15px
+		.person
+			p.desc
+				font-size: 15px
+	.seventhscreen
+		.container
+			padding-left: 0
+			padding-right: 0
+		.header
+			padding-left: 15px
+			padding-right: 15px
+			p
+				padding-left: 0
+				padding-right: 0
+			h2
+				font-size: 24px
+		p
+			padding-left: 15px
+			padding-right: 15px
+		form.form2
+			input
+				width: 100%
+			button[name=submit]
+				width: 100%
+				&:after
+					display: none
+			.checkbox_container
+				padding-left: 15px
+				padding-right: 15px
+	#to_call
+		height: 520px
+		.header
+			p
+				font-size: 20px
+			h2
+				font-size: 24px
+
 
 /*==========  Mobile First  ==========*/
 
